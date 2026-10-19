@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- counter: GTM container number from «Смоки» (СМ-09), not set yet -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://vendingtax.dokuwell.com/price.html">
+<title>Price — vending sales tax by location</title>
+<meta name="description" content="Price of sales tax figures by machine location for vending operators, per month.">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<script src="smoke.js" defer></script>
+<script>
+  /* Price page opened — price_view through smoke.js (window.smokeTrack). */
+  document.addEventListener("DOMContentLoaded", function () { if (window.smokeTrack) window.smokeTrack("price_view"); });
+</script>
+</head>
+<body data-page="price">
+
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Vending Tax Desk</a></div>
+  <nav class="top"><a href="index.html#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="index.html#example" data-ev="click_nav_example">Example</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Plan and price</h1>
+    <p class="sub">Rates by machine location, taxable sales and a report by jurisdiction.</p>
+  </div>
+
+  <section id="price">
+    <div class="grid">
+      <div class="card"><b>Up to 15 machines</b><span>$25 per month.</span><br><a class="btn" href="pay.html?plan=small" data-ev="payment_click click_pay_small">Pay now — $25</a></div>
+      <div class="card"><b>16–50 machines</b><span>$1.50 per machine per month.</span><br><a class="btn" href="pay.html?plan=fleet" data-ev="payment_click click_pay_fleet">Pay now — $1.50 per machine</a></div>
+    </div>
+    <p class="cmp">Sales tax software for vending operators costs $1.50 per machine per month, with a $25 monthly minimum.</p>
+    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
+    <div class="actions"><a class="btn" href="index.html" data-ev="click_back">Back to the description</a></div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
+  <p class="muted">Figures for your own returns only: you check and file. Not tax advice; not affiliated with any tax authority.</p>
+</div></footer>
+
+</body>
+</html>
