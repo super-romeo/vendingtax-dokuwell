@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For vending operators in several cities and counties: the sales tax rate of each machine location, taxable food sales and a report.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -72,68 +76,101 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T7FHXGNV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Vending Tax Desk</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Vending Tax Desk</a>
+  <nav><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Sales tax by machine location — rates, taxable sales and a report for each jurisdiction</h1>
-    <p class="sub">For small vending operators with machines in different cities and counties: each machine gets the tax rate and rules of its own location, food and other products are split into taxable and exempt sales, and you get one report by jurisdiction for filing.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Early access · No payment is taken on this page yet</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> For small vending operators</p>
+      <h1 class="rise" style="--i:1" data-len="long">Sales tax by machine location&nbsp;<span class="soft">— rates, taxable sales and a report for each jurisdiction</span></h1>
+      <p class="rise" style="--i:2">For small vending operators with machines in different cities and counties: each machine gets the tax rate and rules of its own location, food and other products are split into taxable and exempt sales, and you get one report by jurisdiction for filing.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">I need this</a>
+      <p class="meta rise" style="--i:4">Early access · No payment is taken on this page yet</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="160" font-size="40" font-weight="600" fill="#0a1524">Sales tax</text><line x1="120" y1="210" x2="1080" y2="210" stroke="#dde2ea" stroke-width="3" /><circle cx="200" cy="320" r="28" fill="#12397a" /><text x="250" y="332" font-size="32" fill="#0a1524">taxable sales</text><circle cx="200" cy="430" r="28" fill="#dfe8f7" /><rect x="250" y="414" width="280" height="24" rx="12" fill="#dde2ea" /><circle cx="200" cy="540" r="28" fill="#dde2ea" /><rect x="250" y="524" width="220" height="24" rx="12" fill="#b9c3d2" /><rect x="680" y="260" width="380" height="400" rx="20" fill="#dfe8f7" /><text x="710" y="330" font-size="30" font-weight="600" fill="#0a1524">by jurisdiction</text><rect x="720" y="400" width="300" height="48" rx="12" fill="#ffffff" /><rect x="720" y="470" width="250" height="48" rx="12" fill="#12397a" /><rect x="720" y="540" width="280" height="48" rx="12" fill="#ffffff" /></svg></figure>
+    <dl class="facts">
+      <div><dt>For</dt><dd>Small vending operators</dd></div>
+      <div><dt>Report</dt><dd>One report by jurisdiction</dd></div>
+      <div><dt>Sales</dt><dd>Import sales per machine</dd></div>
+      <div><dt>Access</dt><dd>Early access</dd></div>
+    </dl>
+  </section>
 
   <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Rate by location</b><span>Every machine with the state, county and city rate of its address.</span><br><a class="btn" href="price.html" data-ev="feature_location">I need this</a></div>
-      <div class="card"><b>Taxable products</b><span>Snacks, drinks and food split by the rules of the location.</span><br><a class="btn" href="price.html" data-ev="feature_products">I need this</a></div>
-      <div class="card"><b>Report by jurisdiction</b><span>Sales and tax due grouped by each jurisdiction you file in.</span><br><a class="btn" href="price.html" data-ev="feature_report">I need this</a></div>
-      <div class="card"><b>Rate changes</b><span>A note when a rate changes at one of your machine locations.</span><br><a class="btn" href="price.html" data-ev="feature_changes">I need this</a></div>
+    <div class="stack"><h2>What you get</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="90" y="80" width="620" height="440" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="150" font-size="32" font-weight="600" fill="#0a1524">Rate by location</text><circle cx="200" cy="260" r="36" fill="#12397a" /><circle cx="360" cy="340" r="36" fill="#dfe8f7" /><circle cx="520" cy="250" r="36" fill="#dde2ea" /><circle cx="600" cy="420" r="36" fill="#b9c3d2" /><line x1="200" y1="260" x2="360" y2="340" stroke="#b9c3d2" stroke-width="4" /><line x1="360" y1="340" x2="520" y2="250" stroke="#b9c3d2" stroke-width="4" /><line x1="520" y1="250" x2="600" y2="420" stroke="#dde2ea" stroke-width="4" /></svg></div>
+        <h3>Rate by location</h3><p>Every machine with the state, county and city rate of its address.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_location">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="100" y="70" width="600" height="460" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="140" y="140" font-size="32" font-weight="600" fill="#0a1524">Taxable products</text><rect x="140" y="190" width="240" height="140" rx="16" fill="#12397a" /><rect x="410" y="190" width="240" height="140" rx="16" fill="#dfe8f7" /><rect x="140" y="360" width="240" height="110" rx="16" fill="#dde2ea" /><rect x="410" y="360" width="240" height="110" rx="16" fill="#eef2f7" /></svg></div>
+        <h3>Taxable products</h3><p>Snacks, drinks and food split by the rules of the location.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_products">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="80" width="640" height="440" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="30" font-weight="600" fill="#0a1524">Report by jurisdiction</text><rect x="120" y="200" width="520" height="56" rx="12" fill="#eef2f7" /><rect x="120" y="276" width="400" height="56" rx="12" fill="#dfe8f7" /><rect x="120" y="352" width="460" height="56" rx="12" fill="#12397a" /><rect x="120" y="428" width="300" height="56" rx="12" fill="#dde2ea" /></svg></div>
+        <h3>Report by jurisdiction</h3><p>Sales and tax due grouped by each jurisdiction you file in.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_report">I need this</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="110" y="80" width="580" height="440" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="150" y="150" font-size="34" font-weight="600" fill="#0a1524">Rate changes</text><line x1="180" y1="420" x2="620" y2="420" stroke="#b9c3d2" stroke-width="4" /><rect x="200" y="300" width="60" height="120" rx="8" fill="#dde2ea" /><rect x="300" y="260" width="60" height="160" rx="8" fill="#dfe8f7" /><rect x="400" y="200" width="60" height="220" rx="8" fill="#12397a" /><rect x="500" y="280" width="60" height="140" rx="8" fill="#b9c3d2" /></svg></div>
+        <h3>Rate changes</h3><p>A note when a rate changes at one of your machine locations.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_changes">I need this</a>
+      </article>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">Operator with 18 machines in two states and seven cities. End of the month: sales from each machine go in once, the report shows taxable sales and tax due for each city and county, ready to copy into the returns.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="example" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Example</h2>
+      <p>Operator with 18 machines in two states and seven cities. End of the month: sales from each machine go in once, the report shows taxable sales and tax due for each city and county, ready to copy into the returns.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" /><circle cx="240" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="960" cy="150" r="22" fill="#12397a" /><text x="240" y="230" font-size="30" font-weight="600" fill="#0a1524" text-anchor="middle">18 machines</text><text x="600" y="230" font-size="30" font-weight="600" fill="#0a1524" text-anchor="middle">two states</text><text x="960" y="230" font-size="30" font-weight="600" fill="#0a1524" text-anchor="middle">seven cities</text><rect x="150" y="310" width="900" height="390" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="200" y="400" font-size="36" font-weight="600" fill="#0a1524">tax due</text><rect x="200" y="460" width="480" height="24" rx="8" fill="#dde2ea" /><rect x="200" y="510" width="360" height="24" rx="8" fill="#b9c3d2" /><rect x="200" y="560" width="420" height="24" rx="8" fill="#dfe8f7" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>A vending operator with machines in several cities and counties collects sales tax at many different rates. The rate of a machine depends on its address, and whether a snack or a drink is taxable depends on the rules of that state.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>How it works</h2></div>
+    <div class="stack">
+      <p>A vending operator with machines in several cities and counties collects sales tax at many different rates. The rate of a machine depends on its address, and whether a snack or a drink is taxable depends on the rules of that state.</p>
     <p>Done by hand, this means a spreadsheet with one column per city, rates copied from state websites, and a long evening before each filing deadline.</p>
     <p>Vending Tax Desk keeps every machine with its location and the rate that applies there. You enter or import sales per machine, and the service splits them into taxable and exempt sales under the rules of each location.</p>
     <p>At the end of the period you get one report: sales, taxable sales and tax due by state, county and city. You check it and file the returns yourself.</p>
     <p>When a rate changes at one of your locations, the service shows which machines are affected, so the next report uses the right rate.</p>
     <p>The service prepares figures for your returns. It does not file returns, give tax advice or act for you with any tax authority.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Questions</h2>
-    <h3>Do you file my returns?</h3>
-    <p>No. You get the figures by jurisdiction and file yourself.</p>
-    <h3>Which states?</h3>
-    <p>Any US state; each machine uses the rules of its address.</p>
-    <h3>Can I import sales?</h3>
-    <p>Yes, per machine from a spreadsheet.</p>
-    <h3>Is this for large operators?</h3>
-    <p>It is built for operators with about 5 to 50 machines.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether operators need it.</p>
+    <div class="stack"><h2>Questions</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Do you file my returns?</h3><p>No. You get the figures by jurisdiction and file yourself.</p></div>
+      <div class="split flip"><h3>Which states?</h3><p>Any US state; each machine uses the rules of its address.</p></div>
+      <div class="split flip"><h3>Can I import sales?</h3><p>Yes, per machine from a spreadsheet.</p></div>
+      <div class="split flip"><h3>Is this for large operators?</h3><p>It is built for operators with about 5 to 50 machines.</p></div>
+      <div class="split flip"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether operators need it.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Add your first machine location</h2>
-    <p><label>Vending machines you operate<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 7</option><option>8–20</option><option>21–50</option><option>More than 50</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Add a location</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Add your first machine location</h2>
+    </div>
+    <div class="tile stack">
+      <label>Vending machines you operate<select data-ev-focus="form_start"><option value="">— please choose —</option><option>Up to 7</option><option>8–20</option><option>21–50</option><option>More than 50</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Add a location</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Vending Tax Desk</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Figures for your own returns only: you check and file. Not tax advice; not affiliated with any tax authority.</p>
+  <p>Figures for your own returns only: you check and file. Not tax advice; not affiliated with any tax authority.</p>
 </div></footer>
 
 </body>
